@@ -1,6 +1,6 @@
 # Ubuntu Secure Patch Script (USPS)
 
-**OS Secure Patch Script(OSPS)**는 Ubuntu 기반 서버의 보안 패치 및 시스템 보안 설정을 쉽고 빠르게 자동화하는 Bash 스크립트입니다. 
+**Ubuntu Secure Patch Script(USPS)**는 Ubuntu 기반 서버의 보안 패치 및 시스템 보안 설정을 쉽고 빠르게 자동화하는 Bash 스크립트입니다. 
 
 ## 주요 특징
 - 시스템 패키지 업데이트 및 업그레이드
@@ -19,13 +19,13 @@
 ## 사용법
 1. **스크립트 실행**
    ```bash
-   sudo bash OSPS_ubuntu.sh
+   sudo bash usps_ubuntu.sh
    ```
 2. **메뉴에서 원하는 보안 패치 항목을 선택하여 실행**
-3. **설정 수정 메뉴에서 osps.conf 파일을 vi로 편집 가능**
+3. **설정 수정 메뉴에서 usps.conf 파일을 vi로 편집 가능**
 
-## 설정 파일(osps.conf)
-- 모든 주요 보안 정책 및 환경설정은 `osps.conf` 파일에서 관리합니다.
+## 설정 파일(usps.conf)
+- 모든 주요 보안 정책 및 환경설정은 `usps.conf` 파일에서 관리합니다.
 - 예시:
   ```ini
   # 시스템 기본 설정
@@ -35,7 +35,7 @@
   SSH_PERMIT_ROOT_LOGIN=no
   ...
   ```
-- 각 항목별 설명은 osps.conf 파일 내 주석 참고
+- 각 항목별 설명은 usps.conf 파일 내 주석 참고
 
 ## 요구사항
 - Ubuntu 18.04/20.04/22.04 등 (apt 기반)
